@@ -1,0 +1,17 @@
+{
+    "name": "salmanalfa/bysalman",
+    "autoload": {
+        "psr-4": {
+            "Salmanalfa\\Bysalman\\": "src/"
+        }
+    },
+    "require": {},
+    "scripts": {
+        "server": "php -S localhost:8080"
+    },
+
+    "license": "proprietary",
+    "description": "A short description of what your package does."
+
+
+}

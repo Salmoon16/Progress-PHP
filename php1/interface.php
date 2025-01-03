@@ -1,21 +1,38 @@
 <?php
-interface Animalll {
+ interface Animal {
+    public function eat() : string;
+ }
 
-  public function nilai();
-}
+ interface Plants {
 
-class Ant implements Animalll {
-  public function nilai () {
-    return "The Small Animal";
+  public function tumbuh() : string;
+ }
+
+ class Mamalia {
+
+  public $name,
+        $habitat;
+  public function __construct ($name = "none", $habitat = "not found") {
+    $this->name = $name;
+    $this->habitat=$habitat;
   }
-}
 
-class PondokTekno implements Animalll{
-  public function nilai () {
-    return "Pondok Tekno";
+  public function deskripsi() {
+    return "The " . $this->name . " alive in " . $this->habitat;
   }
-}
+ }
 
-$pondokk = new PondokIT ();
-echo "<br>";
-echo $pondokk->nilai ();
+ class Cat extends Mamalia implements Animal, Plants {
+  public function eat() : string {
+    return "And the animal is mine";
+  }
+
+  public function tumbuh() : string {
+    return "slebew";
+  }
+ }
+
+ $cat = new Cat("Cat", "Home");
+ echo $cat->deskripsi();
+ echo "<br>";
+ echo $cat->eat();

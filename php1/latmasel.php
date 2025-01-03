@@ -90,77 +90,99 @@
 
 // }
 
-class kalkulator {
+// class kalkulator {
 
-  public $resultTambah;
-  public $resultKurang;
-  public $resultKali;
-  public $resultBagi;
+//   public $resultTambah;
+//   public $resultKurang;
+//   public $resultKali;
+//   public $resultBagi;
 
 
-  public function tambah($a, $b) {
-    $this->resultTambah = $a + $b;
-    return $this->resultTambah;
+//   public function tambah($a, $b) {
+//     $this->resultTambah = $a + $b;
+//     return $this->resultTambah;
+//   }
+
+
+
+// }
+// // $eksekusi1 = new kalkulator();
+// // $eksekusi1->tambah(5,5);
+
+// // echo $eksekusi1->resultTambah();
+// // echo "\n";
+
+// class Pesantren {
+//   public $asrama20 = "Asrama 20 <br>";
+//   protected $asrama19= "Asrama 19<br>";
+//   private $asrama18 = "Asrama 18<br>";
+
+//   function get_asrama18() {
+//     return $this->asrama18;
+//   }
+// }
+// $salman = new Pesantren();
+// echo $salman->asrama20;
+// echo $salman->get_asrama18();
+
+// class pondokITpro extends Pesantren{
+//   function get_asrama19() {
+//     return $this->asrama19;
+//   }
+// }
+// $dani = new pondokITpro();
+// echo $dani->get_asrama19(); 
+
+// class rumahIt {
+// const LEAVING_MESSAGE = "Terima Kasih telah mengunjungi website kami";
+
+// }
+
+// abstract class ParentClass {
+//   // Abstract method with an argument
+//   abstract protected function fixNamee($name) : string;
+// }
+
+//  class ChildClass extends ParentClass{
+//   public function fixN ($name) : string{
+//     echo 123;
+//   }
+
+// }
+
+// interface Animal {
+//   public function makeSound();
+// }
+//  class Cat implements Animal {
+//   public function makeSound() {
+//     echo "Meow";
+//   }
+// }
+// $binatang = new Cat();
+// $binatang->makeSound();
+
+
+$n = 10;
+for ($i = 1; $i <= $n; $i++) {
+  for($o =$i; $o <= $n; $o++) {
+    echo " ";
   }
-
-
-
-}
-// $eksekusi1 = new kalkulator();
-// $eksekusi1->tambah(5,5);
-
-// echo $eksekusi1->resultTambah();
-// echo "\n";
-
-class PondokIT {
-  public $asrama20 = "Asrama 20 <br>";
-  protected $asrama19= "Asrama 19<br>";
-  private $asrama18 = "Asrama 18<br>";
-
-  function get_asrama18() {
-    return $this->asrama18;
+  for ($p = 1; $p <= (2 * $i - 1); $p++) {
+    echo "*";
   }
+  
+  echo "\n";
 }
-$salman = new pondokIT();
-echo $salman->asrama20;
-echo $salman->get_asrama18();
 
-class pondokITpro extends pondokIT{
-  function get_asrama19() {
-    return $this->asrama19;
+$m = 8;
+$n = 5;
+for ($i = 1; $i <= $n; $i++) {
+  for($k =1; $k <= $m; $k++) {
+    echo " ";
   }
-}
-$dani = new pondokITpro();
-echo $dani->get_asrama19(); 
-
-class rumahIt {
-const LEAVING_MESSAGE = "Terima Kasih telah mengunjungi website kami";
-
-}
-
-abstract class ParentClass {
-  // Abstract method with an argument
-  abstract protected function prefixName($name) : int;
-}
-
- class ChildClass extends ParentClass{
-  public function prefixName ($name) : int{
-    
+  for($o =1; $o <= $n; $o++) {
+    echo "*";
   }
-
+  echo "\n";
 }
-
-interface Animal {
-  public function makeSound();
-}
- class Cat implements Animal {
-  public function makeSound() {
-    echo "Meow";
-  }
-}
-$binatang = new Cat();
-$binatang->makeSound();
-
-
-
 ?>

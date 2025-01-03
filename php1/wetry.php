@@ -98,8 +98,12 @@ $salman = "Salman";
 $alfa =  16;
 $santri = "PondokIT";
 
-function slebew() {
-    echo "Halo, Nama saya $salman, Umur saya $alfa, dan saya santri $santri <br>";
+class Apala{
+    function slebew() {
+        global $salman, $alfa, $santri;
+        return "Halo, Nama saya $salman, Umur saya $alfa, dan saya santri $santri <br>";
+
+}
 }
 slebew();
 
@@ -113,6 +117,9 @@ class Car {
 }
 
 $a = new Car();
+
+
+//kita coba slebewwww
 
 
 ?>
